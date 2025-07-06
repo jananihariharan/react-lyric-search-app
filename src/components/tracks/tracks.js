@@ -6,7 +6,7 @@ import Track from "./track";
 const Tracks = () => {
   const { hits, heading } = useContext(Context);
 
-  console.log("Hits: ", hits);
+//   console.log("Hits: ", hits);
   return (
     <div>
       {hits && hits.length !== 0 ? (

@@ -3,6 +3,7 @@ import Index from "./components/layout";
 import Navbar from "./components/layout/navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Provider } from "./context";
+import Lyrics from "./components/tracks/lyrics";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
           <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/" Component={Index} />
+              <Route exact path="/" Component={Index} />
+              <Route exact path="/lyrics/track/:id" Component={Lyrics} />
             </Routes>
           </div>
         </>
